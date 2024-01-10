@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 
-<main class="contenedor seccion">
+<main class="container section">
     <?php get_template_part('template-parts/post'); ?>
 
-    <div class="comentarios">
+    <div class="comments">
         <?php comment_form(); ?>
 
-        <h3 class="text-center" style="margin-top: 4rem">Comentarios</h3>
+        <h3 class="text-center" style="margin-top: 4rem">comments</h3>
 
-        <ul class="lista-comentarios">
+        <ul class="comment-lists">
             <?php
-                $comentarios = get_comments([
+                $comments = get_comments([
                     'post_id' => $post->ID,
                     'status' => 'approve'
                 ]);
@@ -18,7 +18,7 @@
                 wp_list_comments([
                     'per_page' => 10,
                     'reverse_top_level' => false,
-                ], $comentarios)
+                ], $comments)
             ?>
         </ul>
     </div>

@@ -17,7 +17,7 @@ if ( is_front_page() ) {
 </head>
 <body class="<?= implode(' ', $body_classes); ?>" style="--hero-image: url(<?= $hero_image ?? '' ?>)">
 <header class="header">
-    <div class="contenedor barra-navegacion">
+    <div class="container navbar">
         <a href="<?= site_url('/') ?>" class="logo">
             <img class="logo" src="<?php echo get_template_directory_uri().'/images/logo.svg' ?> " alt="">
         </a>
@@ -36,7 +36,7 @@ if ( is_front_page() ) {
             $args = [
                 'theme_location' => 'menu-principal',
                 'container' => 'nav',
-                'container_class' => 'menu-principal',
+                'container_class' => 'primary-menu',
             ];
 
             wp_nav_menu($args);
@@ -45,7 +45,7 @@ if ( is_front_page() ) {
     </div>
 
     <?php if (is_front_page()): ?>
-        <div class="tagline text-center contenedor">
+        <div class="tagline text-center container">
             <h1 class="ml2"><?php the_field('hero_heading'); ?></h1>
 
             <p><?php the_field('hero_texto'); ?></p>

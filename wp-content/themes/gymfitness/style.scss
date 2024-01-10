@@ -100,20 +100,20 @@ hr {
     border: 1px solid var(--light-grey);
 }
 
-.imagen-destacada {
+.feature-image {
     margin-bottom: 3rem;
 }
 
-.contenedor {
+.container {
     width: min(95%, 120rem);
     margin: 0 auto;
 }
 
-.contenido-centrado {
+.center-content {
     width: min(95%, 80rem);
 }
 
-.contenido-footer {
+.footer-content {
     padding: 4rem 0;
 
     @media (min-width: 768px) {
@@ -123,7 +123,7 @@ hr {
 }
 
 .form-submit .submit,
-.boton {
+.btn {
     $bg: $dark-grey;
 
     background-color: $bg;
@@ -153,7 +153,7 @@ hr {
 }
 
 .form-submit .submit,
-.boton.boton-primario {
+.btn.btn-primary {
     $bg: $primary;
 
     background-color: $bg;
@@ -209,7 +209,7 @@ hr {
     align-items: end;
 }
 
-.seccion {
+.section {
     padding: 5rem 0;
 }
 
@@ -219,7 +219,7 @@ hr {
     padding: 2rem 0;
 }
 
-.barra-navegacion {
+.navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,7 +271,7 @@ hr {
 }
 
 
-.menu-principal {
+.primary-menu {
     .menu {
         // display: none;
     }
@@ -359,7 +359,7 @@ hr {
 }
 
 /** Cards **/
-.listado-grid {
+.grid-list {
     margin-top: 4rem;
     display: grid;
     gap: 2rem;
@@ -387,7 +387,7 @@ hr {
         transform: scale(1.1);
     }
 
-    .contenido {
+    .content {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -440,20 +440,20 @@ hr {
 
 /** Sidebar **/
 @media (min-width: 768px) {
-    .con-sidebar {
+    .with-sidebar {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 4rem;
     }
 }
 
-.informacion-clase {
+.class-information {
     font-weight: 700;
     font-size: 2.2rem;
 }
 
 /** Listado de clases en Sidebar **/
-.clases-sidebar {
+.sidebar-classes {
     li {
         border-bottom: 1px solid var(--light-grey);
         display: grid;
@@ -467,7 +467,7 @@ hr {
     }
 
 
-    .contenido-clase {
+    .class-content {
         h3 {
             font-size: 2.6rem;
             margin: 0;
@@ -486,7 +486,7 @@ hr {
 
 /** Galeria **/
 
-.galeria-imagenes {
+.gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 30rem);
@@ -551,7 +551,7 @@ hr {
         color: var(--primary);
     }
 
-    .categorias {
+    .categories {
         display: flex;
         align-items: start;
         gap: .5rem;
@@ -719,12 +719,12 @@ body.home .header {
     @media (min-width: 992px) {
         position: relative;
 
-        &:hover .contenido {
+        &:hover .content {
             opacity: 1;
         }
     }
 
-    .contenido {
+    .content {
         padding: 3rem;
 
         @media (min-width: 992px) {
@@ -744,11 +744,11 @@ body.home .header {
         }
     }
 
-    .especialidades {
+    .specialties {
         margin-top: 2rem;
     }
 
-    .etiqueta {
+    .tag {
         background-color: getColor('primary');
         color: getColor('white');
         text-transform: uppercase;
@@ -774,18 +774,18 @@ body.home .header {
 }
 
 /** Testimoniales **/
-.contenedor-testimoniales {
+.testimonial-container {
     overflow: hidden;
 }
 
-.testimoniales {
+.testimonials {
     background: linear-gradient(
         rgb(0 0 0 / .75),
         rgb(0 0 0 / .75),
     ), url('images/testimonial-bg.jpg') no-repeat center center/cover;
     padding: 12rem;
 
-    .contenedor-testimoniales {
+    .testimonial-container {
         width: min(95%, 80rem);
         margin: 0 auto;
 
@@ -835,8 +835,8 @@ body.home .header {
     }
 }
 
-/** Comentarios **/
-.comentarios {
+/** comments **/
+.comments {
     width: min(96%, 60rem);
     margin: 5rem auto 5rem;
 
@@ -878,7 +878,7 @@ body.home .header {
     }
 }
 
-.lista-comentarios {
+.comment-lists {
     .comment-author {
         img {
             width: 5rem;

@@ -4,7 +4,7 @@ foreach ($args ?? [] as $key => $value) {
 }
 ?>
 
-<ul class="listado-grid">
+<ul class="grid-list">
     <?php
     $args = [
         'post_type' => 'gymfitness_clases',
@@ -18,7 +18,7 @@ foreach ($args ?? [] as $key => $value) {
         <li class="card">
             <?php the_post_thumbnail('full'); ?>
 
-            <div class="contenido">
+            <div class="content">
                 <a href="<?php the_permalink(); ?>">
                     <h3><?php the_title() ?></h3>
                 </a>

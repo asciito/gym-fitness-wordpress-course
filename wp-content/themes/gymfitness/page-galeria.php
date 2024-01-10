@@ -9,10 +9,10 @@ $galeria_imagenes = explode(',', $galeria['ids']);
 
 <?php get_header(); ?>
 
-    <main class="contenedor seccion">
+    <main class="container section">
         <?php the_title('<h1 class="text-center text-primary">', '</h1>'); ?>
 
-        <ul class="galeria-imagenes">
+        <ul class="gallery">
             <?php
             foreach ($galeria_imagenes as $id) :
                 $imagen = wp_get_attachment_image_src($id, 'mediano')[0];

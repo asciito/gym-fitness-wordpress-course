@@ -32,7 +32,7 @@ if ( ! function_exists("gymfitness_scripts_styles") ) {
             'style',
             get_stylesheet_uri(),
             ['normalize'],
-            '1.0.0'
+            '1.0.1'
         );
 
         /** Swiper */
@@ -72,7 +72,7 @@ if ( ! function_exists("gymfitness_scripts_styles") ) {
             'scripts',
             get_template_directory_uri() . '/js/scripts.js',
             ['jquery'],
-            '1.0.0',
+            '1.0.1',
             true,
         );
     }

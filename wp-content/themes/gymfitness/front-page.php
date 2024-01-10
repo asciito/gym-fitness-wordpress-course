@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="bienvenida seccion contenedor text-center">
+<section class="bienvenida section container text-center">
     <h2 class="text-primary"><?php the_field('encabezado_bienvenida') ?></h2>
 
     <p><?php the_field('texto_bienvenida'); ?></p>
@@ -18,17 +18,17 @@
     <?php endforeach; ?>
 </section>
 
-<main class="contenedor seccion">
+<main class="container section">
     <h2 class="text-center text-primary">Nuestras clases</h2>
 
     <?php get_template_part('template-parts/listado-clases', args: ['cantidad' => 4]) ?>
 
     <div class="flex justify-end" style="margin-top: 2rem">
-        <a class="boton boton-primario" href="<?= get_permalink( get_page_by_path('clases') ) ?>">Ver todas las clases</a>
+        <a class="btn btn-primary" href="<?= get_permalink( get_page_by_path('clases') ) ?>">Ver todas las clases</a>
     </div>
 </main>
 
-<section class="contenedor seccion instructores">
+<section class="container section instructores">
     <h2 class="text-center text-primary">Nuestros instructores</h2>
 
     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi necessitatibus, nihil non tenetur? Ipsam, sed.</p>
@@ -36,15 +36,15 @@
     <?php get_template_part('template-parts/listado-instructores') ?>
 </section>
 
-<section class="testimoniales">
+<section class="testimonials">
     <h2 class="text-center text-white">Testimoniales</h2>
 
-    <div class="contenedor-testimoniales">
+    <div class="testimonial-container">
         <?php get_template_part('template-parts/listado-testimoniales') ?>
     </div>
 </section>
 
-<section class="contenedor seccion">
+<section class="container section">
     <h2 class="text-primary text-center">Nuestro Blog</h2>
 
     <p class="text-center">Aprende de nuestros instructores expertos</p>
@@ -58,7 +58,7 @@
     $blog = new WP_Query($args);
     ?>
 
-    <ul class="listado-grid">
+    <ul class="grid-list">
         <?php while ( $blog->have_posts() ): $blog->the_post(); ?>
             <?php get_template_part('template-parts/blog'); ?>
         <?php endwhile; wp_reset_postdata(); ?>

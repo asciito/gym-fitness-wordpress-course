@@ -24,7 +24,7 @@ class GymFitness_Clases_Widget extends WP_Widget {
 
         $clases = new WP_Query($args);
 
-        echo '<ul class="clases-sidebar">';
+        echo '<ul class="sidebar-classes">';
 
         while ( $clases->have_posts() ): $clases->the_post(); ?>
             <li>
@@ -32,7 +32,7 @@ class GymFitness_Clases_Widget extends WP_Widget {
                     <? the_post_thumbnail('thumbnail'); ?>
                 </div>
 
-                <div class="contenido-clase">
+                <div class="class-content">
                     <a href="<?php the_permalink(); ?>">
                         <h3><?php the_title() ?></h3>
                     </a>

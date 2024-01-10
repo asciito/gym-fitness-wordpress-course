@@ -3,7 +3,7 @@
 
     <?php the_post_thumbnail('full'); ?>
 
-    <div class="contenido">
+    <div class="content">
         <a href="<?php the_permalink(); ?>">
             <h3><?php the_title() ?></h3>
         </a>

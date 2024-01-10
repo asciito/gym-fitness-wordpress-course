@@ -1,12 +1,12 @@
 <?php
 /**
- * Template Name: Contenido Centrado (No Sidebar)
+ * Template Name: content Centrado (No Sidebar)
  */
 ?>
 
 <?php get_header(); ?>
 
-    <main class="contenedor seccion contenido-centrado">
+    <main class="container section center-content">
         <?php get_template_part('template-parts/pagina'); ?>
     </main>
 

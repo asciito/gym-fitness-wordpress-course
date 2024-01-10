@@ -5,7 +5,7 @@ $autor = get_queried_object();
 $autor_meta = get_the_author_meta('user_description', $autor->ID);
 ?>
 
-    <main class="contenedor seccion">
+    <main class="container section">
         <h2 class="text-center">
             <span>Autor:</span>
 
@@ -18,7 +18,7 @@ $autor_meta = get_the_author_meta('user_description', $autor->ID);
             <?= $autor_meta ?>
         </p>
 
-        <ul class="listado-grid">
+        <ul class="grid-list">
             <?php while ( have_posts() ): the_post(); ?>
                 <?php get_template_part('template-parts/blog'); ?>
             <?php endwhile; ?>

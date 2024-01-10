@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main class="contenedor seccion con-sidebar">
-    <section class="contenido-principal">
+<main class="container section with-sidebar">
+    <section class="content-principal">
         <?php get_template_part('template-parts/clase'); ?>
     </section>
 

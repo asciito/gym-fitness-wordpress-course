@@ -4,7 +4,7 @@ foreach ($args ?? [] as $key => $value) {
 }
 ?>
 
-<ul class="listado-testimoniales swiper-wrapper">
+<ul class="swiper-wrapper">
     <?php
     $args = [
         'post_type' => 'testimoniales',

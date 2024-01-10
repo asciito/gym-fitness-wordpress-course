@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <main class="contenedor seccion">
+    <main class="container section">
        <?php get_template_part('template-parts/pagina'); ?>
     </main>
 

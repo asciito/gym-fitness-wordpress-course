@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<main class="contenedor seccion">
+<main class="container section">
     <?php
     the_title('<h1 class="text-center text-primary">', '</h1>');
 

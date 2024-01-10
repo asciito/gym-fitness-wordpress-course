@@ -4,7 +4,7 @@ foreach ($args ?? [] as $key => $value) {
 }
 ?>
 
-<ul class="listado-grid instructores">
+<ul class="grid-list instructores">
     <?php
     $args = [
         'post_type' => 'instructores',
@@ -18,14 +18,14 @@ foreach ($args ?? [] as $key => $value) {
         <li class="instructor">
             <?php the_post_thumbnail('large'); ?>
 
-            <div class="contenido text-center">
+            <div class="content text-center">
                 <h3 class=""><?= get_the_title() ?></h3>
 
                 <?php the_content(); ?>
 
-                <div class="especialidades">
-                    <?php foreach( get_field('especialidades') as $especialidad ): ?>
-                        <span class="etiqueta"><?= esc_html( $especialidad ); ?></span class="etiqueta">
+                <div class="specialties">
+                    <?php foreach( get_field('specialties') as $especialidad ): ?>
+                        <span class="tag"><?= esc_html( $especialidad ); ?></span class="tag">
                     <?php endforeach; ?>
                 </div>
             </div>

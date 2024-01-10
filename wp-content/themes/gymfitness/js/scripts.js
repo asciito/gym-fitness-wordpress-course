@@ -1,4 +1,4 @@
-const swiper = new Swiper('.contenedor-testimoniales', {
+const swiper = new Swiper('.testimonial-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -35,7 +35,7 @@ if ( textWrapper ) {
 
 window.onscroll = function () {
     const scrollY = window.scrollY;
-    const nav = document.getElementsByClassName('barra-navegacion')[0];
+    const nav = document.getElementsByClassName('navbar')[0];
 
     if (scrollY <= 300) {
         nav.classList.remove('fixed-top');
