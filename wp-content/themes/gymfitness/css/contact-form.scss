@@ -1,0 +1,42 @@
+/** Contact Form **/
+.wpcf7-form {
+    label {
+      font-weight: 700;
+    }
+
+    .wpcf7-form-control {
+        width: 100%;
+        padding: .5rem 1rem;
+        border: 1px solid getColor(gris-claro);
+    }
+
+
+    .wpcf7-submit {
+        background-color: getColor('primario');
+        font-size: 2rem;
+        font-family: var(--fuente-headings);
+        padding: 1.2rem;
+        color: getColor('blanco');
+
+        &:hover {
+            background-color: darken($primario, 10%);
+            cursor: pointer;
+        }
+    }
+
+    .wpcf7-not-valid-tip {
+        background-color: rgba(200, 6, 6);
+        color: getColor('blanco');
+        padding: .5rem;
+        margin: .5rem 0;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .wpcf7-spinner {
+        display: block;
+        margin: 2rem auto 0 auto;
+        background-color: getColor('primario');
+        opacity: 1;
+    }
+}
